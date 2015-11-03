@@ -1,0 +1,32 @@
+/** {
+    border: 1px solid red !important;
+}*/
+
+/*box-sizing calculates elements size to include both border and padding (not margin) this is a new thing and some browsers have trboule with so these webkits add browser specificatios*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #747704;
+    font-weight: 300;
+}
+ .text-muted {
+   color: #bcbbbb;
+ }
+
+ .text-thin {
+   font-weight: 100;
+ }
+
+.title-super {
+  font-size: 60px;
+}
+
+.title-logo {
+  margin-top: 20px;
+}
