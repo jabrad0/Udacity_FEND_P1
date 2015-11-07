@@ -1,0 +1,39 @@
+
+
+@media screen and (max-width: 549px) {
+
+.navicon {
+	float: right;
+	height: 30px;
+	width: 34px;
+	margin: 20px;
+	border-top: 18px double red;
+	border-bottom: 6px solid orange;
+  }
+
+.nav {
+  /*keeps ontop when moves offscreen*/
+  z-index: 10;
+  background-color: #fff;
+  width: 300px;
+  /*position: absolute;*/
+  /* This trasform moves the drawer off canvas. */
+  -webkit-transform: translate(-300px, 0);
+  transform: translate(-300px, 0);
+  /* Optionally, we animate the drawer. */
+  transition: transform 0.3s ease;
+  }
+
+.nav.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+.nav__item {
+    display: list-item;
+    border-bottom: 1px solid #E0E0E0;
+    width: 100%;
+    text-align: left;
+  }
+
+}

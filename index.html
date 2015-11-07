@@ -11,30 +11,52 @@
       <link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="css/bootstrap.css">
       <link rel="stylesheet" href="css/styles.css">
+      <link rel="stylesheet" href="css/responsive.css">
+
       <!-- at final need to minify css and js! -->
       <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
 <!-- <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css"> -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-      <script src="js/bootstrap.js"></script>
+
   </head>
   <body>
       <div class="container">
-          <div class="row">
-              <div class="col-md-6">
-                <img class="title-logo" src="images/profile100x100.jpg" alt="Profile photo of Juli Brady">
-              </div>
-              <div class="col-md-6 text-right text-uppercase">
-                <h1 class="title-super text-thin">Juli Brady</h1>
-                <h4>Front-end Ninja</h4>
-              </div>
+        <div class="row">
+          <div class="col-md-6">
+            <img class="title-logo" src="images/profile100x100.jpg" alt="Profile photo of Juli Brady">
+            <!-- Hamburger icon -->
+            <a id="menu" class="navicon" href="#"></a>
+            <!-- End Hamburger icon -->
           </div>
+          <div class="col-md-6 text-right text-uppercase">
+            <h1 class="title-super text-thin">Juli Brady</h1>
+            <h4>Front-end Ninja</h4>
+          </div>
+        </div>
+
           <div class ="row">
             <div class ="col-md-12">
               <hr>
             </div>
           </div>
+
+          <div class ="row">
+            <div class ="col-md-12">
+              <nav id="drawer" class="nav">
+                <ul class="nav__list">
+                  <li class="nav__item"><a href="#">About Me</a></li>
+                  <li class="nav__item"><a href="#">Projects</a></li>
+                  <li class="nav__item"><a href="#">Resume</a></li>
+                  <li class="nav__item"><a href="#">Blog</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+
           <div class="row">
             <div class="col-md-12">
+              <!-- images/unitedstates.jpg -->
+              <!-- http://placebear.com/1200/500 -->
               <img class="img-responsive" src="http://placebear.com/1200/500" alt="">
             </div>
           </div>
@@ -62,6 +84,22 @@
           </div>
       </div>
 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <!-- <script type="text/javascript" src="js/script.js"></script> -->
+      <script>
+      var menu = document.querySelector('#menu');
+      var container = document.querySelector('.container');
+      var drawer = document.querySelector('.nav');
+
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+      container.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+      </script>
 
   </body>
 </html>
