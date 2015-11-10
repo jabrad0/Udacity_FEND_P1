@@ -17,6 +17,7 @@ img {
 hr {
   height: 1px;
   background-color: black;
+  border: none;
 }
 
 body {
@@ -37,7 +38,7 @@ ul {
   margin: 0;
 }
 
-.nav__item {
+.nav-item {
   display: inline-block;
   width: 24%;
   text-align: center;
@@ -46,13 +47,13 @@ ul {
   /*line-height: 24px;*/
 }
 
- .text-muted {
-   color: #bcbbbb;
- }
+.text-muted {
+  color: #bcbbbb;
+}
 
- .text-thin {
-   font-weight: 100;
- }
+.text-thin {
+  font-weight: 100;
+}
 
 .title-super {
   font-size: 60px;
@@ -62,6 +63,10 @@ ul {
   margin-top: 20px;
 }
 
+.featuredwork-hr {
+  background-color: #bcbbbb;
+  height: 1px;
+}
 
 
 

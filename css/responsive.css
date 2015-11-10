@@ -1,9 +1,26 @@
+.top-container.navrow, .main-container.main-image {
+  order: 10;
+}
 
+@media screen and (max-width: 550px) {
+  .main-container.main-image {
+    order: 0;
+    width: 60%;
+  }
+}
 
-@media screen and (max-width: 549px) {
+@media screen and (max-width: 992px) {
+.text-muted {
+  text-align: center;
+}
+}
+
+/*below 550*/
+@media screen and (max-width: 550px) {
 
 .navicon {
-	float: right;
+  position: absolute;
+  float: right;
 	height: 30px;
 	width: 34px;
 	margin: 20px;
@@ -18,8 +35,8 @@
   width: 300px;
   /*position: absolute;*/
   /* This trasform moves the drawer off canvas. */
-  -webkit-transform: translate(-300px, 0);
-  transform: translate(-300px, 0);
+  -webkit-transform: translate(-400px, 0);
+  transform: translate(-400px, 0);
   /* Optionally, we animate the drawer. */
   transition: transform 0.3s ease;
   }
@@ -29,7 +46,7 @@
     transform: translate(0, 0);
   }
 
-.nav__item {
+.nav-item {
     display: list-item;
     border-bottom: 1px solid #E0E0E0;
     width: 100%;
@@ -37,3 +54,30 @@
   }
 
 }
+
+/*below 400*/
+@media screen and (max-width: 400px){
+  .title-super {
+    font-size: 3em;
+  }
+}
+
+/*below 300*/
+@media screen and (max-width: 300px){
+  .title-super {
+    font-size: 1em;
+  }
+  h4 {
+    font-size: 0.5em;
+  }
+}
+/*above 550*/
+/*@media screen and (min-width: 401px) {
+  .container.top-container {
+    background-color: green;
+
+}
+.container.main-container {
+  background-color: yellow;
+}
+}*/

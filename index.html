@@ -19,65 +19,82 @@
 
   </head>
   <body>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <img class="title-logo" src="images/profile100x100.jpg" alt="Profile photo of Juli Brady">
-            <!-- Hamburger icon -->
-            <a id="menu" class="navicon" href="#"></a>
-            <!-- End Hamburger icon -->
-          </div>
-          <div class="col-md-6 text-right text-uppercase">
-            <h1 class="title-super text-thin">Juli Brady</h1>
-            <h4>Front-end Ninja</h4>
+
+
+    <div class="container top-container">
+      <!-- Container-top -->
+      <div class="row title">
+        <!-- using col-xs-6 in this row prevented columns from wrapping too early -->
+        <div class="col-xs-6">
+          <img class="title-logo" src="images/profile100x100.jpg" alt="Profile photo of Juli Brady">
+          <!-- Hamburger icon -->
+          <a id="menu" class="navicon" href="#"></a>
+          <!-- End Hamburger icon -->
+        </div>
+
+        <div class="col-xs-6 text-right text-uppercase">
+          <h1 class="title-super text-thin">Juli Brady</h1>
+          <h4>Front-end Ninja</h4>
+        </div>
+      </div>
+
+        <div class ="row">
+          <div class ="col-md-12">
+            <hr noshade>
           </div>
         </div>
 
-          <div class ="row">
-            <div class ="col-md-12">
-              <hr>
-            </div>
+
+        <div class ="row navrow">
+          <div class ="col-md-12">
+            <nav id="drawer" class="nav">
+              <ul class="nav-list">
+                <li class="nav-item"><a href="#">About Me</a></li>
+                <li class="nav-item"><a href="#">Projects</a></li>
+                <li class="nav-item"><a href="#">Resume</a></li>
+                <li class="nav-item"><a href="#">Blog</a></li>
+              </ul>
+            </nav>
           </div>
-
-          <div class ="row">
-            <div class ="col-md-12">
-              <nav id="drawer" class="nav">
-                <ul class="nav__list">
-                  <li class="nav__item"><a href="#">About Me</a></li>
-                  <li class="nav__item"><a href="#">Projects</a></li>
-                  <li class="nav__item"><a href="#">Resume</a></li>
-                  <li class="nav__item"><a href="#">Blog</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
+        </div>
+    </div>
 
 
-          <div class="row">
-            <div class="col-md-12">
+    <div class="container main-container">
+        <!-- Container-main -->
+
+          <div class="row main-image">
+            <div class="col-xs-12">
               <!-- images/unitedstates.jpg -->
               <!-- http://placebear.com/1200/500 -->
               <img class="img-responsive" src="http://placebear.com/1200/500" alt="">
             </div>
           </div>
+
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-xs-12">
               <h2 class="text-muted">Featured Work</h2>
             </div>
           </div>
-          <div class="row text-center">
-            <div class="col-md-4">
-              <img class="img-responsive" src="http://placebear.com/300/300" alt="">
+          <div class ="row">
+            <div class ="col-md-12">
+              <hr class="featuredwork-hr" noshade>
+            </div>
+          </div>
+
+          <div class="row text-center example-work">
+            <div class="col-md-4" >
+              <img class="img-responsive center-block" src="http://placebear.com/300/300" alt="">
               <h3 class="text-uppercase">Appify</h3>
               <p>https://github.com</p>
             </div>
             <div class="col-md-4">
-              <img class="img-responsive" src="http://placebear.com/300/300" alt="">
+              <img class="img-responsive center-block" src="http://placebear.com/300/300" alt="">
               <h3 class="text-uppercase">Sunflower</h3>
               <p>https://github.com</p>
             </div>
             <div class="col-md-4">
-              <img class="img-responsive" src="http://placebear.com/300/300" alt="">
+              <img class="img-responsive center-block" src="http://placebear.com/300/300" alt="">
               <h3 class="text-uppercase">Bokeh</h3>
               <p>https://github.com</p>
             </div>
