@@ -1,43 +1,90 @@
+
 module.exports = function(grunt) {
 
-    // 1-2. All configuration goes here
-    grunt.initConfig({
-        pkg: grunt.file.readJSON('package.json'),
-
-        concat: {
-          dist: {
-            src: [
-                'js/*.js', // All JS in the libs folder
-                'Gruntfile.js'  // This specific file
-            ],
-            dest: 'js/build/production.js',
-          }
-
+  grunt.initConfig({
+    responsive_images: {
+      dev: {
+        options: {
+          engine: 'im',
+          sizes: [{
+            width: 1600,
+            suffix: '_large_2x',
+            quality: 75
+          }, {
+            width: 800,
+          suffix: '_large_1x',
+          quality: 75
+        }]
         },
-        uglify: {
-            build: {
-              src: 'js/build/production.js',
-              dest: 'js/build/production.min.js'
-            }
+
+        /*
+        Only cange this part if you change
+        the directory structure.
+        */
+        files: [{
+          expand: true,
+          src: ['*.{gif,jpg,png}'],
+          cwd: 'images_src/',
+          dest: 'images/'
+        }]
+      }
+    },
+
+    /* Clear out the images directory if it exists */
+    clean: {
+      dev: {
+        src: ['images'],
+      },
+    },
+
+    /* Generate the images directory if it is missing */
+    mkdir: {
+      dev: {
+        options: {
+          create: ['images']
         },
-        imagemin: {
-          dynamic: {
-            files: [{
-              expand: true,
-              cwd: 'images/',
-              src: ['**/*.{png,jpg,gif}'],
-              dest: 'images/build/'
-            }]
-          }
+      },
+    },
+
+    /* Copy the "fixed" images that don't go through processing into the images/directory */
+    copy: {
+      dev: {
+        files: [{
+          expand: true,
+          src: 'images_src/fixed/*.{gif,jpg,png}',
+          dest: 'images/'
+        }]
+      },
+    },
+    pkg: grunt.file.readJSON('package.json'),
+
+    concat: {
+      dist: {
+        src: [
+            'js/*.js', // All JS in the libs folder
+            // 'js/bootstrap.js',
+            // 'js/script.js',
+            'Gruntfile.js'  // This specific file
+        ],
+        dest: 'js/build/production.js',
+      }
+
+    },
+    uglify: {
+        build: {
+          src: 'js/build/production.js',
+          dest: 'js/build/production.min.js'
         }
-    });
+    },
 
-    // 3. Where we tell Grunt we plan to use this plug-in.
-    grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-imagemin');
+  });
 
-    // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['concat', 'uglify', 'imagemin']);
+  grunt.loadNpmTasks('grunt-responsive-images');
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-mkdir');
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.registerTask('default', ['clean', 'mkdir', 'copy', 'responsive_images', 'concat', 'uglify']);
 
 };
