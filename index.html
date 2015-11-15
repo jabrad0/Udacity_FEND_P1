@@ -1,61 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <!-- character set -->
-      <meta charset="UTF-8">
-      <!-- tells IE to use best engine you got -->
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <!-- for mobile how to display page when loads  -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Portfolio</title>
-      <link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
-      <link rel="stylesheet" href="css/bootstrap.css">
-      <link rel="stylesheet" href="css/styles.css">
-      <link rel="stylesheet" href="css/responsive.css">
 
-      <!-- at final need to minify css and js! -->
-      <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
-<!-- <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css"> -->
-
-  </head>
-  <body>
+<head>
+    <!-- character set -->
+    <meta charset="UTF-8">
+    <!-- tells IE to use best engine you got -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- for mobile how to display page when loads  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-    <div class="container top-container">
-      <!-- Container-top -->
-      <div class="row title">
-        <!-- using col-xs-6 in this row prevented columns from wrapping too early -->
-        <div class="col-xs-6">
-          <img class="title-logo" src="images/profile100x100.jpg" alt="Profile photo of Juli Brady">
-          <!-- Hamburger icon -->
-          <a id="menu" class="navicon" href="#"></a>
-          <!-- End Hamburger icon -->
+    <title>Juli Brady</title>
+    <link rel="icon" href="images/favicon.jpg">
+    <link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=brandico">
+
+    <!-- at final need to minify css and js! -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css"> -->
+
+</head>
+
+<body id="grad">
+
+
+    <div class="container top-container" id="top">
+        <!-- Container-top -->
+        <div class="row title">
+            <!-- using col-xs-6 in this row prevented columns from wrapping too early -->
+            <div class="col-xs-6">
+                <img class="title-logo" src="images/profile100x100.jpg" alt="Profile photo of Juli Brady">
+                <!-- Hamburger icon -->
+                <a id="menu" class="navicon" href="#"></a>
+                <!-- End Hamburger icon -->
+                <div id="social">
+                    <a href="https://twitter.com" class="brandico-twitter" target="_blank"></a>
+                    <a href="https://github.com" class="brandico-github" target="_blank"></a>
+                    <a href="https://linkedin.com" class="brandico-linkedin" target="_blank"></a>
+                </div>
+
+            </div>
+
+
+
+            <div class="col-xs-6 text-right text-uppercase">
+                <h1 class="title-super text-thin">Juli Brady</h1>
+                <h4>Junior Developer</h4>
+            </div>
         </div>
 
-        <div class="col-xs-6 text-right text-uppercase">
-          <h1 class="title-super text-thin">Juli Brady</h1>
-          <h4>Front-end Ninja</h4>
-        </div>
-      </div>
-
-        <div class ="row">
-          <div class ="col-md-12">
-            <hr noshade>
-          </div>
+        <div class="row">
+            <div class="col-md-12">
+                <hr noshade>
+            </div>
         </div>
 
 
-        <div class ="row navrow">
-          <div class ="col-md-12">
-            <nav id="drawer" class="nav">
-              <ul class="nav-list">
-                <li class="nav-item"><a href="#">About Me</a></li>
-                <li class="nav-item"><a href="#">Projects</a></li>
-                <li class="nav-item"><a href="#">Resume</a></li>
-                <li class="nav-item"><a href="#">Blog</a></li>
-              </ul>
-            </nav>
-          </div>
+        <div class="row navrow">
+            <div class="col-md-12">
+                <nav id="drawer" class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item"><a href="#">Resume</a>
+                        </li>
+                        <li class="nav-item"><a href="#travels">Travels</a>
+                        </li>
+                        <li class="nav-item"><a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </div>
 
@@ -63,60 +81,103 @@
     <div class="container main-container">
         <!-- Container-main -->
 
-          <div class="row main-image">
+        <div class="row about-me-hr">
+            <div class="col-md-12">
+                <hr class="main-container-hr" noshade>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-xs-12">
-              <!-- images/unitedstates.jpg -->
-              <!-- http://placebear.com/1200/500 -->
-              <img class="img-responsive" src="http://placebear.com/1200/500" alt="">
+                <h2 class='text-center'>I'm Juli Brady</h2>
+                <p class='text-center'>Four dollar toast you probably haven't heard of them gentrify brooklyn cornhole cliche whatever, fixie aesthetic paleo venmo roof party plaid tousled waistcoat. Microdosing humblebrag bicycle rights neutra. Everyday carry locavore before they sold out 90's. Jean shorts pop-up chicharrones, irony bushwick cornhole 8-bit intelligentsia cred migas photo booth mumblecore. </p>
             </div>
-          </div>
+        </div>
 
-          <div class="row">
+        <div class="row">
+            <div class="col-md-12">
+                <hr class="main-container-hr" noshade>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-xs-12">
-              <h2 class="text-muted">Featured Work</h2>
+                <h2 class="text-muted" id="projects">Projects</h2>
             </div>
-          </div>
-          <div class ="row">
-            <div class ="col-md-12">
-              <hr class="featuredwork-hr" noshade>
-            </div>
-          </div>
+        </div>
 
-          <div class="row text-center example-work">
-            <div class="col-md-4" >
-              <img class="img-responsive center-block" src="http://placebear.com/300/300" alt="">
-              <h3 class="text-uppercase">Appify</h3>
-              <p>https://github.com</p>
+
+        <div class="row text-center example-work">
+            <div class="col-md-4">
+                <img class="img-responsive center-block" src="http://placebear.com/300/300" alt="">
+                <h3 class="text-uppercase">Appify</h3>
+                <p>https://github.com</p>
             </div>
             <div class="col-md-4">
-              <img class="img-responsive center-block" src="http://placebear.com/300/300" alt="">
-              <h3 class="text-uppercase">Sunflower</h3>
-              <p>https://github.com</p>
+                <img class="img-responsive center-block" src="http://placebear.com/300/300" alt="">
+                <h3 class="text-uppercase">Sunflower</h3>
+                <p>https://github.com</p>
             </div>
             <div class="col-md-4">
-              <img class="img-responsive center-block" src="http://placebear.com/300/300" alt="">
-              <h3 class="text-uppercase">Bokeh</h3>
-              <p>https://github.com</p>
+                <img class="img-responsive center-block" src="http://placebear.com/300/300" alt="">
+                <h3 class="text-uppercase">Bokeh</h3>
+                <p>https://github.com</p>
             </div>
-          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <hr class="main-container-hr" noshade>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-muted" id="travels">My 2015 in a Nutshell</h2>
+            </div>
+        </div>
+        <div class="row main-image">
+
+            <div class="col-xs-12">
+                <!-- images/unitedstates.jpg -->
+                <!-- http://placebear.com/1200/500 -->
+                <img class="img-responsive center-block" src="images/unitedstates_800x440.jpg" alt="">
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <hr class="main-container-hr" noshade>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-muted" id="contact">Contact Me</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="#" id="#">Craft beer tote bag master cleanse pitchfork chambray chartreuse.</h2>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <hr class="main-container-hr" noshade>
+            </div>
+        </div>
+        <div class="row">
+        <div class="return-top">
+          <a href="#top">Back to top of page</a>
+        </div>
       </div>
 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-      <script src="js/bootstrap.js"></script>
-      <!-- <script type="text/javascript" src="js/script.js"></script> -->
-      <script>
-      var menu = document.querySelector('#menu');
-      var container = document.querySelector('.container');
-      var drawer = document.querySelector('.nav');
+    </div>
 
-      menu.addEventListener('click', function(e) {
-        drawer.classList.toggle('open');
-        e.stopPropagation();
-      });
-      container.addEventListener('click', function() {
-        drawer.classList.remove('open');
-      });
-      </script>
 
-  </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
 </html>
