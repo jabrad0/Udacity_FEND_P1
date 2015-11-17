@@ -20,23 +20,23 @@
 #grad {
     background: -webkit-linear-gradient(#fff, #6e6e6e); /*For Safari 5.1 to 6.0*/ background: -o-linear-gradient(#fff, #6e6e6e);/*For Opera 11.1 to 12.0*/ background: -moz-linear-gradient(#fff, #6e6e6e);/*For Firefox 3.6 to 15*/ background: linear-gradient(#fff, #6e6e6e);/*Standard syntax*/
 }
-img {
-    max-width: 100%;
-}
-hr {
-    height: 1px;
-    background-color: black;
-    border-width: 0;
+
+/*Overwrite bootstrap a tag color*/
+a {
+    color: #000;
 }
 body {
     font-family: 'Lato', sans-serif;
     color: black;
     font-weight: 300;
 }
-/*Overwrite bootstrap a tag color*/
-
-a {
-    color: #000;
+hr {
+    height: 1px;
+    background-color: black;
+    border-width: 0;
+}
+img {
+    max-width: 100%;
 }
 ul {
     list-style: none;
@@ -67,13 +67,13 @@ ul {
     background-color: #bcbbbb;
     height: 1px;
 }
-.return-top {
-    height: 3em;
-    margin-left: 1em;
-}
 .about-me-hr {
     height: 1em;
 }
 #travels {
     color: #cccccc;
+}
+.return-top {
+    height: 3em;
+    margin-left: 1em;
 }
