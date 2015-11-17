@@ -1,104 +1,79 @@
 /** {
-    border: 1px solid red !important;
+    outline: 1px solid red !important;
 }*/
-
 /*box-sizing calculates elements size to include both border and padding (not margin) this is a new thing and some browsers have trboule with so these webkits add browser specificatios*/
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
 }
-
 [class*="brandico-"]:before {
-  font-family: 'brandico', sans-serif;
-  color: black;
-  display: inline-block;
-  text-shadow: 3px 3px 3px #bcbbbb;
-  width: 2.8em;
-  margin-top: 1.2em;
+    font-family: 'brandico', sans-serif;
+    color: black;
+    display: inline-block;
+    text-shadow: 3px 3px 3px #bcbbbb;
+    width: 2.8em;
+    margin-top: 1.2em;
 }
-
 #grad {
-  background: -webkit-linear-gradient(#fff, #6e6e6e);  For Safari 5.1 to 6.0
-  background: -o-linear-gradient(#fff, #6e6e6e);  For Opera 11.1 to 12.0
-  background: -moz-linear-gradient(#fff, #6e6e6e);  For Firefox 3.6 to 15
-  background: linear-gradient(#fff, #6e6e6e );  Standard syntax
+    background: -webkit-linear-gradient(#fff, #6e6e6e); /*For Safari 5.1 to 6.0*/ background: -o-linear-gradient(#fff, #6e6e6e);/*For Opera 11.1 to 12.0*/ background: -moz-linear-gradient(#fff, #6e6e6e);/*For Firefox 3.6 to 15*/ background: linear-gradient(#fff, #6e6e6e);/*Standard syntax*/
 }
-
 img {
-  max-width:100%;
-
+    max-width: 100%;
 }
-
 hr {
-  height: 1px;
-  background-color: black;
-  border: none;
+    height: 1px;
+    background-color: black;
+    border-width: 0;
 }
-
 body {
-
     font-family: 'Lato', sans-serif;
     color: black;
     font-weight: 300;
 }
-
 /*Overwrite bootstrap a tag color*/
+
 a {
-color: #000;
+    color: #000;
 }
-
-
-
 ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
-
 .nav-item {
-  display: inline-block;
-  width: 24%;
-  text-align: center;
-  padding: 24px;
-  text-transform: uppercase;
-  line-height: 10px;
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+    padding: 24px;
+    text-transform: uppercase;
+    line-height: 10px;
 }
-
 .text-muted {
-  color: #bcbbbb;
+    color: #bcbbbb;
 }
-
 .text-thin {
-  font-weight: 100;
+    font-weight: 100;
 }
-
 .title-super {
-  font-size: 60px;
+    font-size: 60px;
 }
-
 .title-logo {
-  margin-top: 20px;
+    margin-top: 20px;
 }
-
 .main-container-hr {
-  background-color: #bcbbbb;
-  height: 1px;
+    background-color: #bcbbbb;
+    height: 1px;
 }
-
 .return-top {
-  height: 3em;
-  margin-left: 1em;
+    height: 3em;
+    margin-left: 1em;
 }
-.about-me-hr{
-  height: 1em;
+.about-me-hr {
+    height: 1em;
 }
-
 #travels {
-  color: #8e8e8e;
+    color: #cccccc;
 }
-/*#5e412f #fcebb6 #78c0a8 #f07818 #f0a830
-#6e6e6e #ff9900 #f3843e #ff5a09 #393939 #639bf1 #77ba9b
-2fbebd
- */
