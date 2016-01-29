@@ -17,10 +17,14 @@
     text-shadow: 3px 3px 3px #bcbbbb;
     width: 2.8em;
     margin-top: 1.2em;
+    font-weight: 500;
 }
 
 .gradient {
-    background: -webkit-linear-gradient(#fff, #6e6e6e); /*For Safari 5.1 to 6.0*/ background: -o-linear-gradient(#fff, #6e6e6e);/*For Opera 11.1 to 12.0*/ background: -moz-linear-gradient(#fff, #6e6e6e);/*For Firefox 3.6 to 15*/ background: linear-gradient(#fff, #6e6e6e);/*Standard syntax*/
+  background: -webkit-linear-gradient(#fff, #6e6e6e); /*For Safari 5.1 to 6.0*/
+  background: -o-linear-gradient(#fff, #6e6e6e);/*For Opera 11.1 to 12.0*/
+  background: -moz-linear-gradient(#fff, #6e6e6e);/*For Firefox 3.6 to 15*/
+  background: linear-gradient(#fff, #6e6e6e);/*Standard syntax*/
 }
 
 /*Overwrite bootstrap a tag color*/
