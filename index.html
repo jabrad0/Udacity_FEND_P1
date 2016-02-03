@@ -10,8 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-    <title>Juli Brady</title>
-    <link rel="stylesheet"   href="//normalize-css.googlecode.com/svn/trunk/normalize.css">
+    <title>Juli Brady - Portfolio</title>
+    <link rel="stylesheet"   src="//normalize-css.googlecode.com/svn/trunk/normalize.css">
     <link rel="icon" href="images/images_src/fixed/favicon.jpg">
     <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Lato:100,300'>
 
@@ -103,17 +103,19 @@
             <div class="col-md-4">
                 <img class="img-responsive center-block" src="images/images_src/fixed/getgo_home_300x216.png" alt="screenshot image of project">
                 <h3 class="text-uppercase">Getgo</h3>
-                <p>https://github.com/jabrad0/Getgo</p>
+                <a href="https://github.com/jabrad0/Getgo" target="_blank">https://github.com/jabrad0/Getgo</a></br>
+                <a class="weblink" href="https://getartandgo.herokuapp.com/" target="_blank">https://getartandgo.herokuapp.com/</a>
             </div>
             <div class="col-md-4">
                 <img class="img-responsive center-block" src="images/images_src/fixed/corky_300x216.png" alt="screenshot image of project">
                 <h3 class="text-uppercase">Spiritual Corky</h3>
-                <p>https://github.com/jabrad0/Spirtual_Corky</p>
+                <a href="https://github.com/jabrad0/Spirtual_Corky" target="_blank">https://github.com/jabrad0/Spirtual_Corky</a></br>
+                <a class="weblink" href="https://twitter.com/spiritual_corky" target="_blank">https://twitter.com/spiritual_corky</a>
             </div>
             <div class="col-md-4">
                 <img class="img-responsive center-block" src="images/images_src/fixed/frogger_300x216.png" alt="screenshot image of project">
                 <h3 class="text-uppercase">Arcade</h3>
-                <p>https://github.com/jabrad0/Udacity_FEND_P3</p>
+                <a href="https://github.com/jabrad0/Udacity_FEND_P3" target="_blank">https://github.com/jabrad0/Udacity_FEND_P3</a>
             </div>
         </div>
         <div class="row">
@@ -124,7 +126,7 @@
 
         <div class="row">
             <div class="col-xs-12">
-                <h2 class="text-muted" id="travels">Travels of 2015 (in a nutshell)</h2>
+                <h2 class="text-muted" id="travels">Travels of 2015 (in one graphic)</h2>
             </div>
         </div>
         <div class="row main-image">
@@ -134,6 +136,18 @@
                         <source class="img-responsive center-block" media="(min-width: 500px)" srcset="images/images_src/fixed/unitedstates_medium.jpg">
                             <img class="img-responsive center-block" src="images/images_src/fixed/unitedstates_small.jpg" alt="cartoon drawing of united states with routes of travel from california to east coast and back">
                 </picture>
+                <!--START JUICEBOX EMBED-->
+                <script src="juicebox_gallery/jbcore/juicebox.js"></script>
+                <script>
+                new juicebox({
+                containerId: "juicebox-container",
+                galleryWidth: "50%",
+                galleryHeight: "50%",
+                backgroundColor: "#222222"
+                });
+                </script>
+                <div id="juicebox-container"></div>
+                <!--END JUICEBOX EMBED-->
             </div>
         </div>
         <div class="row">
@@ -149,13 +163,12 @@
         <div class="row">
             <div class="col-xs-12">
                 <!-- <h2 class="#" id="#">Craft beer tote bag master cleanse pitchfork chambray chartreuse.</h2> -->
-                <form action="//formspree.io/@email.com" method="post">
-                    Name: <input type="text" name="name"><br>
-                    E-mail: <input type="text" name="email"><br>
-                    <input type="submit">
-
+                <form action="http://formspree.io/julibrady@gmail.com" method="POST">
+                    <input name="name" type="text" class="feedback-input" placeholder="Name" />
+                    <input name="email" type="text" class="feedback-input" placeholder="Email" />
+                    <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+                    <input type="submit" value="SUBMIT"/>
               </form>
-
             </div>
         </div>
         <div class="row">
@@ -169,6 +182,9 @@
             </div>
         </div>
     </div>
+
+
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <!-- <script src="js/build/production.min.js"></script> -->
